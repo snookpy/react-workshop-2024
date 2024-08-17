@@ -1,9 +1,0 @@
-{
-  "label": "Tutorial - First Component",
-  "position": 10,
-  "className": "hidden-sidebar",
-  "link": {
-    "type": "generated-index",
-    "description": "Start learning react, create first component"
-  }
-}
