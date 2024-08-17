@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_cmu_docs_2024=self.webpackChunkreact_cmu_docs_2024||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/react-workshop-docs-2024/blog","blogTitle":"Blog","authorsListPath":"/react-workshop-docs-2024/blog/authors"}')}}]);
