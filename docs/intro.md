@@ -22,7 +22,8 @@ Example mycostech.com, many components become one.
 Top Level, React build and bundle javascript render all components into script file than apply to `index.html`
 
 React combine all components like a tree, thus it have to had a root component.
-
+example mycostech.com on above in diagram
+![component-root-diagram](./img/com_di.jpg)
 
 ## Getting Started
 Get started by **creating a new component**.

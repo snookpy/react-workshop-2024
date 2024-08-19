@@ -1,11 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 # Basic Typescript
 Before we go to far in React, we should know about typescript especially Object and managing Array
 
 Brief: Simulate strong type interpreter to JavaScript, reduce Developer pain (or increase)
 
+Use https://www.typescriptlang.org/play/ to easy practice.
 
 ## Declare Variable
 
@@ -130,6 +131,30 @@ We don't know how to deal with the type, put it any but not recommend for entry 
 - unknown, never
 - Enum
 - helper, Partial, Required, 
+
+## Destructuring Object
+Expression which unpack value from object also declare variable with the same name
+```typescript
+ const nookHooMan: YourSelf = {
+    name: "Nook",
+    age: 30,
+ }
+```
+
+Unpack name property also declare variable `name`
+```typescript
+// like const name = nookHooMan.name
+const { name } = nookHooMan
+console.log(name)
+```
+Unpack name property but want to change name property to hooManName
+```typescript
+// like const hooManName = nookHooMan.name
+const { name: hooManName } = nookHooMan
+console.log(hooManName)
+
+console.log(name) // should got a error
+```
 
 ## Spread Syntax
 Guarantee return new object, fix pass by ref.
