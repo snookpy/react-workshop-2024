@@ -44,7 +44,7 @@ Open `App.tsx` file in `src\App.tsx`
 
 we type the code below to create a hello world component
 
-```jsx
+```jsx {2-4}
 // start here
 const HelloWorld = () => {
 	return <p>Hello, World</p>
@@ -75,7 +75,7 @@ function HelloWorld () {
 wait, we already created component but where is the Hello World?
 we created -> yes and then we have to use it too in the `App.jsx`
 
-```jsx
+```jsx {9}
 const HelloWorld = () => {
   return <p>Hello, World</p>
 }
@@ -101,7 +101,7 @@ We should not store all code in one file, we will separate HelloWorld out from` 
 2. Move HelloWorld component in `App.tsx` to the file we just created.
 3. add `export` in the first line, `export const ....`
 
-```jsx
+```jsx {2}
 // HelloWorld.tsx
 export const HelloWorld = () => {
   return <p>Hello, World</p>
@@ -110,7 +110,7 @@ export const HelloWorld = () => {
 
 4. back to App.tsx on above file, we import HelloWorld component
 
-```jsx
+```jsx {2}
 // import here
 import { HelloWorld } from "./components/HelloWorld"
 
@@ -149,7 +149,7 @@ body {
 }
 ```
 **********************
-```jsx
+```jsx {3}
 // App.jsx
 // import here
 import "./App.css"
@@ -162,7 +162,7 @@ function App() {
 ```
 **********************
 
-```jsx
+```jsx {3}
 // HelloWorld.tsx
 export const HelloWorld = () => {
 	return <p className="text-red">Hello, World</p>

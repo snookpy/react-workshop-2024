@@ -6,7 +6,9 @@ sidebar_position: 3
 
 What is React Props? object data properties which receive from parent Component
 
-`props` cannot be changed, it read only.
+`props` cannot be changed, it read only AKA `immutable`.
+
+`props` can declare any type, string, number, function, object ...
 
 ## Create MyName Component
 
@@ -32,7 +34,7 @@ Ops!, many new words appear. What are those,`parent Component`, `type`, `MyNameP
 
 use in App.tsx
 
-```jsx
+```jsx {2,5}
 // App.tsx
 import { MyName } from "./components/MyName"
 
@@ -62,8 +64,7 @@ Also show `age` in MyName Component.
   
   ![lie-png](./img/lie_png.jpg)
 
-    ```jsx
-
+    ```jsx {4,9,12}
 // MyName.tsx
 type MyNameProps = {
 name: string;
@@ -83,7 +84,7 @@ age: number;
 
 ---
 
-    ```jsx
+    ```jsx {6}
     // App.tsx
         import './App.css';
         import { MyName } from './components/MyName';

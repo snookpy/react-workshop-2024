@@ -67,7 +67,7 @@ Final version of any web app it should contain one or multiple html but it will 
 
 all our react code will combine into main.tsx at
 `<script type="module" src="/src/main.tsx"></script>`
-```html
+```html {11}
 <!DOCTYPE html>
 <html lang="en">
   <head>

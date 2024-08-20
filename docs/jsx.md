@@ -71,7 +71,7 @@ Before this section we mention inline style, here we go
 
 JSX can inline style with `object`only. Forgot it? back to Basic Typescript.
 
-```jsx
+```jsx {4-7}
 return (
 	<>
 		<p
@@ -99,7 +99,7 @@ Do condition inside expression `{}`
 
 Use `&&` after condition
 
-```jsx
+```jsx {6}
 //MyName.tsx
 
 return (
@@ -118,7 +118,7 @@ Use `short if` of JavaScript
 
 `condition ? 'if true' : 'else'`
 
-```jsx
+```jsx {4}
 return (
 	<>
 		<p>Name</p>
