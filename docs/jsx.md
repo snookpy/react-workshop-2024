@@ -75,10 +75,10 @@ JSX can inline style with `object`only. Forgot it? back to Basic Typescript.
 return (
 	<>
 		<p
-			style={{
-				color: "red",
-                fontSize: '24px',
-			}}
+		style={{
+			color: "red",
+			fontSize: '24px',
+		}}
 		>
 			Name
 		</p>
@@ -105,14 +105,14 @@ Use `&&` after condition
 return (
 	<>
 		<p>Name</p>
-		{age >= 20 && <p>Age</p>}
+		{age >= 20 && <p>Can go inside pub</p>}
 	</>
 )
 ```
 
 ### If Else
 
-if have more than one condition; if age >= 20 I can voted., else I am too young.
+if have more than one condition; if age >= 18 I can voted., else I am too young.
 
 Use `short if` of JavaScript
 
@@ -122,7 +122,7 @@ Use `short if` of JavaScript
 return (
 	<>
 		<p>Name</p>
-		<p>{age >= 20 ? "I can voted." : "I am too young."}</p>
+		<p>{age >= 18 ? "I can voted." : "I am too young."}</p>
 	</>
 )
 ```

@@ -84,13 +84,14 @@ const HelloWorld = () => {
 function App() {
   // shorter version
   // return <HelloWorld />
-  return <HelloWorld><HelloWorld/>;
+  return <HelloWorld></HelloWorld>;
 }
 
 export default App;
 ```
 
-So, the Hello, World should show in the UI now.
+So, the Hello, World! should show in the UI now.
+![hello-world-result](./img/hello_world.png)
 
 ## Import & Export Component
 
@@ -172,4 +173,5 @@ Well, now we see a new one `className="text-red"` which className is a `Props`
 
 **Note** import always stay on top of component file
 
+![hello-world-final-result](./img/hello_world_component.png)
 <!-- <iframe src="https://stackblitz.com/edit/mycos-component?embed=1&file=src%2FApp.tsx&embed=1" style={{width: "100%", height: "400px", border: 0}}></iframe> -->

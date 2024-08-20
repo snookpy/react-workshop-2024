@@ -6,6 +6,8 @@ sidebar_position: 3
 
 What is React Props? object data properties which receive from parent Component
 
+`props` cannot be changed, it read only.
+
 ## Create MyName Component
 
 Example we Create Component Call `MyName.tsx` in the src/components folder
@@ -24,7 +26,7 @@ export const MyName = (props: MyNameProps) => {
 }
 ```
 
-Ops!, many new words appear. What are those,`parent Component`, `type`, `MyNameProps`, `name: string` ....
+Ops!, many new words appear. What are those,`parent Component`, `type`, `MyNameProps`, `name: string`, `{name}` ....
 
 ---
 
@@ -38,6 +40,7 @@ function App() {
 	return <MyName name="Nook" />
 }
 ```
+Passing value to the name prop with `name="Nook"`
 
 Parent now is: `App.tsx`
 
@@ -71,8 +74,8 @@ age: number;
     const name = props.name;
     const age = props.age;
     return (
-        <p>
-        Hi {name} I am {age} years old.
+        <p class="text-red">
+        Hi my name is {name} I am {age} years old.
         </p>
     );
     };
@@ -90,5 +93,7 @@ age: number;
         }
     ```
     `name="Nook"` will be string but our age property is number so we passing `age` with **curly bracket** instead
+
+![my-name-component-age-result](./img/my_name_result.png)
 
 </details>
