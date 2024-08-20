@@ -71,6 +71,66 @@ Any input field, mostly use `onChange` event to keep the typing input data.
 ></input>
 ```
 
+### onSubmit event
+It is props of form tag
+```jsx
+<form onSubmit={() => {}}></form>
+```
+
+Has two form type in React
+1. Controlled form 
+We declare all input field values with state, `useState` of cause.
+Then bind all input's value `props`.
+
+Also change input value with `onChange` event.
+
+```jsx {10,13}
+const [firstName, setFirstName] = useState<string>('Nook')
+const [phone, setPhone] = useState<string>('0932363326')
+
+return (
+    <form onSubmit={(e) => {
+        e.preventDefault()
+        console.log('firstName: ', firstName)
+        console.log('phone: ', phone)
+    }}>
+        <input type="text" value={firstName} 
+            onChange={e => setFirstName(e.target.value)}
+        />
+        <input type="text" value={phone} 
+            onChange={e => setPhone(e.target.value)}
+        />
+        <button type="submit">submit</button>
+    </form>
+)
+```
+
+2. Uncontrolled form
+We did not control with state, let browser handle for us but we have to declare `name` prop and `defaultValue` prop on every `<input />`.
+
+This method can retrieve form data in many ways. one way is use `FormData` Api
+
+```jsx {12,13}
+    <form
+        onSubmit={(event) => {
+          // prevent page refresh after submit
+          event.preventDefault();
+
+          // convert all input inside form to Object Data
+          const formData = new FormData(event.currentTarget);
+          const formEntries = Object.fromEntries(formData.entries());
+          console.log(formEntries);
+        }}
+      >
+        <input type="text" name="firstName" defaultValue="Nook" />
+        <input type="text" name="phone" defaultValue="0932363326" />
+        <button type="submit">submit</button>
+      </form>
+```
+
+Why `event.preventDefault();` ?
+To prevent original behavior of browser, onSubmit form will refresh page after we emit submit.
+
 ## Counter Component
 Counter component is the good way to understand `useState` hook
 
