@@ -163,19 +163,24 @@ what is it? to summary it contain API from creating Component into destroyed com
 The useEffect Hook will called after dependencies changed
 
 Syntax
-```tsx
+```tsx {3-10}
 const Component = () => {
 
-    
-}
 useEffect(() => {
-    // Do something
+    // Do something -- 1
 
-    // Optional
+    // Optional -- 2
     return () => {
 
     }
-}, [dependencies])
+}, [dependencies]) // --3
+
+return (
+  <p>
+    ex use effect hook API
+  </p>
+)
+}
 ```
 
 useEffect contains
