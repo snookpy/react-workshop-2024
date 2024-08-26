@@ -4,13 +4,15 @@ sidebar_position: 8
 
 # Do Flip Card App
 
-Now we will combine what we lean togeather to build simple App: Flip Card
+Now we will combine what we lean together to build simple App: Flip Card
 
 ## Requirement
 
 - First input Name and Description into the card then submit.
 - After submit will flip to blank card,
 - Finally click the card again to show Name and Description, click again to show the blank card.
+
+![flip-card-diagram](./img/flip_card_di.png)
 
 ## Answer Codes
 <details>
